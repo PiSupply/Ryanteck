@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>2-ButtonInput</title>
+      <style>.markdown-preview { font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 14px; line-height: 1.6; overflow: scroll; box-sizing: border-box; padding: 20px; background-color: rgb(255, 255, 255); }
+.markdown-preview code { color: rgb(51, 51, 51); }
+.markdown-preview code, .markdown-preview tt, .markdown-preview pre.editor-colors { font-size: 12px; font-family: Consolas, 'Liberation Mono', Courier, monospace; }
+.markdown-preview a, .markdown-preview a code { color: rgb(65, 131, 196); }
+.markdown-preview ol > li { list-style-type: decimal; }
+.markdown-preview ul > li { list-style-type: disc; }
+.markdown-preview li > pre.editor-colors { display: inline-block; vertical-align: top; width: 100%; }
+.markdown-preview li:last-child > pre.editor-colors { margin-bottom: 0px; }
+.markdown-preview > :first-child { margin-top: 0px !important; }
+.markdown-preview > :last-child { margin-bottom: 0px !important; }
+.markdown-preview a.absent { color: rgb(204, 0, 0); }
+.markdown-preview a.anchor { display: block; padding-left: 30px; margin-left: -30px; cursor: pointer; position: absolute; top: 0px; left: 0px; bottom: 0px; }
+.markdown-preview h1, .markdown-preview h2, .markdown-preview h3, .markdown-preview h4, .markdown-preview h5, .markdown-preview h6 { font-family: 'Helvetica Neue', Helvetica, sans-serif; margin: 20px 0px 10px; padding: 0px 0px 10px; font-weight: bold; -webkit-font-smoothing: antialiased; cursor: text; position: relative; }
+.markdown-preview h1 .octicon-link, .markdown-preview h2 .octicon-link, .markdown-preview h3 .octicon-link, .markdown-preview h4 .octicon-link, .markdown-preview h5 .octicon-link, .markdown-preview h6 .octicon-link { display: none; color: rgb(0, 0, 0); }
+.markdown-preview h1:hover a.anchor, .markdown-preview h2:hover a.anchor, .markdown-preview h3:hover a.anchor, .markdown-preview h4:hover a.anchor, .markdown-preview h5:hover a.anchor, .markdown-preview h6:hover a.anchor { text-decoration: none; line-height: 1; padding-left: 0px; margin-left: -22px; top: 15%; }
+.markdown-preview h1:hover a.anchor .octicon-link, .markdown-preview h2:hover a.anchor .octicon-link, .markdown-preview h3:hover a.anchor .octicon-link, .markdown-preview h4:hover a.anchor .octicon-link, .markdown-preview h5:hover a.anchor .octicon-link, .markdown-preview h6:hover a.anchor .octicon-link { display: inline-block; }
+.markdown-preview h1 tt, .markdown-preview h2 tt, .markdown-preview h3 tt, .markdown-preview h4 tt, .markdown-preview h5 tt, .markdown-preview h6 tt, .markdown-preview h1 code, .markdown-preview h2 code, .markdown-preview h3 code, .markdown-preview h4 code, .markdown-preview h5 code, .markdown-preview h6 code { font-size: inherit; }
+.markdown-preview h1 { font-size: 28px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); color: rgb(0, 0, 0); }
+.markdown-preview h2 { font-size: 24px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); color: rgb(0, 0, 0); }
+.markdown-preview h3 { font-size: 18px; }
+.markdown-preview h4 { font-size: 16px; }
+.markdown-preview h5 { font-size: 14px; }
+.markdown-preview h6 { color: rgb(119, 119, 119); font-size: 14px; }
+.markdown-preview p, .markdown-preview blockquote, .markdown-preview ul, .markdown-preview ol, .markdown-preview dl, .markdown-preview table, .markdown-preview pre.editor-colors { margin: 15px 0px; }
+.markdown-preview hr { border: 0px none; color: rgb(204, 204, 204); height: 4px; padding: 0px; margin: 15px 0px; background: url('data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC') 0px 0px repeat-x transparent; }
+.markdown-preview > h2:first-child, .markdown-preview > h1:first-child, .markdown-preview > h1:first-child + h2, .markdown-preview > h3:first-child, .markdown-preview > h4:first-child, .markdown-preview > h5:first-child, .markdown-preview > h6:first-child { margin-top: 0px; padding-top: 0px; }
+.markdown-preview a:first-child h1, .markdown-preview a:first-child h2, .markdown-preview a:first-child h3, .markdown-preview a:first-child h4, .markdown-preview a:first-child h5, .markdown-preview a:first-child h6 { margin-top: 0px; padding-top: 0px; }
+.markdown-preview h1 + p, .markdown-preview h2 + p, .markdown-preview h3 + p, .markdown-preview h4 + p, .markdown-preview h5 + p, .markdown-preview h6 + p { margin-top: 0px; }
+.markdown-preview li p.first { display: inline-block; }
+.markdown-preview ul, .markdown-preview ol { padding-left: 30px; }
+.markdown-preview ul.no-list, .markdown-preview ol.no-list { list-style-type: none; padding: 0px; }
+.markdown-preview ul li > :first-child, .markdown-preview ol li > :first-child, .markdown-preview ul li ul:first-of-type, .markdown-preview ol li ul:first-of-type { margin-top: 0px; }
+.markdown-preview ul ul, .markdown-preview ul ol, .markdown-preview ol ol, .markdown-preview ol ul { margin-bottom: 0px; }
+.markdown-preview dl { padding: 0px; }
+.markdown-preview dl dt { font-size: 14px; font-weight: bold; font-style: italic; padding: 0px; margin: 15px 0px 5px; }
+.markdown-preview dl dt:first-child { padding: 0px; }
+.markdown-preview dl dt > :first-child { margin-top: 0px; }
+.markdown-preview dl dt > :last-child { margin-bottom: 0px; }
+.markdown-preview dl dd { margin: 0px 0px 15px; padding: 0px 15px; }
+.markdown-preview dl dd > :first-child { margin-top: 0px; }
+.markdown-preview dl dd > :last-child { margin-bottom: 0px; }
+.markdown-preview blockquote { border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); padding: 0px 15px; color: rgb(119, 119, 119); }
+.markdown-preview blockquote > :first-child { margin-top: 0px; }
+.markdown-preview blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview blockquote p { font-size: 16px; line-height: 1.5; }
+.markdown-preview table th { font-weight: bold; }
+.markdown-preview table th, .markdown-preview table td { border: 1px solid rgb(204, 204, 204); padding: 6px 13px; }
+.markdown-preview table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview img { max-width: 100%; }
+.markdown-preview span.frame { display: block; overflow: hidden; }
+.markdown-preview span.frame > span { border: 1px solid rgb(221, 221, 221); display: block; float: left; overflow: hidden; margin: 13px 0px 0px; padding: 7px; width: auto; }
+.markdown-preview span.frame span img { display: block; float: left; }
+.markdown-preview span.frame span span { clear: both; color: rgb(51, 51, 51); display: block; padding: 5px 0px 0px; }
+.markdown-preview span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview span.align-center > span { display: block; overflow: hidden; margin: 13px auto 0px; text-align: center; }
+.markdown-preview span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview span.align-right > span { display: block; overflow: hidden; margin: 13px 0px 0px; text-align: right; }
+.markdown-preview span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview span.float-left { display: block; margin-right: 13px; overflow: hidden; float: left; }
+.markdown-preview span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview span.float-right { display: block; margin-left: 13px; overflow: hidden; float: right; }
+.markdown-preview span.float-right > span { display: block; overflow: hidden; margin: 13px auto 0px; text-align: right; }
+.markdown-preview code, .markdown-preview tt { margin: 0px 2px; padding: 0px 5px; border: 1px solid rgb(234, 234, 234); border-radius: 3px; text-shadow: none; background-color: rgb(248, 248, 248); }
+.markdown-preview pre.editor-colors { font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px; border-radius: 3px; border: 1px solid rgb(230, 230, 230); background: rgb(255, 255, 255); }
+.markdown-preview kbd { border-radius: 2px; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(204, 204, 204) rgb(204, 204, 204) rgb(221, 221, 221); padding: 1px 4px; line-height: 10px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-image: linear-gradient(rgb(241, 241, 241), rgb(221, 221, 221)); background-color: rgb(221, 221, 221); background-repeat: repeat-x; }
+.markdown-preview .emoji { height: 20px; width: 20px; }
+.markdown-preview { font-size: 1.25em; color: rgb(87, 87, 87); background-color: rgb(255, 255, 255); }
+.markdown-preview h1, .markdown-preview h2 { color: inherit; border-color: rgb(224, 224, 224); }
+.markdown-preview a { color: rgb(20, 146, 255); }
+.markdown-preview hr { background-color: rgb(255, 255, 255); }
+.markdown-preview blockquote { color: rgb(87, 87, 87); border-left-color: rgba(87, 87, 87, 0.701961); }
+.markdown-preview table th, .markdown-preview table td { border-color: rgb(224, 224, 224); }
+.markdown-preview table th { background-color: rgb(255, 255, 255); }
+.markdown-preview table tr { background-color: rgb(255, 255, 255); }
+.markdown-preview table tr:nth-child(2n) { background-color: rgb(247, 247, 247); }
+.markdown-preview code { color: rgb(112, 112, 112); border-color: rgb(224, 224, 224); background-color: rgb(252, 252, 252); background-clip: padding-box; }
+.markdown-preview pre.editor-colors::shadow .line.cursor-line { background-color: transparent; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 1px dashed rgba(250, 128, 114, 0.5);
+}
+
+pre.editor-colors,
+.host {
+  background-color: #ffffff;
+  color: #1d1f21;
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  background-color: #c5c8c6;
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: #373b41;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: #373b41;
+}
+pre.editor-colors .gutter,
+.host .gutter {
+  background-color: #c5c8c6;
+  color: #1d1f21;
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  background-color: #969896;
+  color: #1d1f21;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection,
+.host .gutter .line-number.cursor-line-no-selection {
+  color: #1d1f21;
+}
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+.host .gutter .line-number:after,
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after {
+  color: #969896;
+}
+pre.editor-colors .invisible,
+.host .invisible {
+  color: #1d1f21;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  color: #000000;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #404349;
+}
+pre.editor-colors .search-results .marker .region,
+.host .search-results .marker .region {
+  background-color: transparent;
+  border: 1px solid #969896;
+}
+pre.editor-colors .search-results .marker.current-result .region,
+.host .search-results .marker.current-result .region {
+  border: 1px solid #ffffff;
+}
+.comment {
+  color: #d00000;
+}
+.entity.name.type {
+  color: #00007f;
+  text-decoration: underline;
+}
+.entity.other.inherited-class {
+  color: #b5bd68;
+}
+.keyword {
+  color: #00007f;
+}
+.keyword.control {
+  color: #00007f;
+}
+.keyword.operator {
+  color: #1d1f21;
+}
+.keyword.other.special-method {
+  color: #00007f;
+}
+.keyword.other.unit {
+  color: #00007f;
+}
+.storage {
+  color: #b294bb;
+}
+.constant {
+  color: #00007f;
+}
+.constant.character.escape {
+  color: #8abeb7;
+}
+.constant.numeric {
+  color: #007f00;
+}
+.constant.other.color {
+  color: #8abeb7;
+}
+.constant.other.symbol {
+  color: #b5bd68;
+}
+.variable {
+  color: #007f00;
+}
+.variable.interpolation {
+  color: #bf4040;
+}
+.variable.parameter.function {
+  color: #1d1f21;
+}
+.invalid.illegal {
+  background-color: #cc6666;
+  color: #ffffff;
+}
+.string {
+  color: #de935f;
+}
+.string.regexp {
+  color: #8abeb7;
+}
+.string.regexp .source.ruby.embedded {
+  color: #de935f;
+}
+.string.other.link {
+  color: #cc6666;
+}
+.punctuation.definition.comment {
+  color: #d00000;
+}
+.punctuation.definition.string,
+.punctuation.definition.variable,
+.punctuation.definition.parameters,
+.punctuation.definition.array {
+  color: #1d1f21;
+}
+.punctuation.definition.heading,
+.punctuation.definition.identity {
+  color: #81a2be;
+}
+.punctuation.definition.bold {
+  color: #f0c674;
+  font-weight: bold;
+}
+.punctuation.definition.italic {
+  color: #b294bb;
+  font-style: italic;
+}
+.punctuation.section.embedded {
+  color: #bf4040;
+}
+.support.class {
+  color: #00007f;
+}
+.support.function {
+  color: #8abeb7;
+}
+.support.function.any-method {
+  color: #81a2be;
+}
+.entity.name.function {
+  color: #81a2be;
+}
+.entity.name.class,
+.entity.name.type.class {
+  color: #00007f;
+}
+.entity.name.section {
+  color: #81a2be;
+}
+.entity.name.tag {
+  color: #cc6666;
+  text-decoration: underline;
+}
+.entity.other.attribute-name {
+  color: #00007f;
+}
+.entity.other.attribute-name.id {
+  color: #81a2be;
+}
+.meta.class {
+  color: #f0c674;
+}
+.meta.link {
+  color: #de935f;
+}
+.meta.require {
+  color: #81a2be;
+}
+.meta.selector {
+  color: #b294bb;
+}
+.meta.separator {
+  background-color: #ffffff;
+  color: #1d1f21;
+}
+.none {
+  color: #1d1f21;
+}
+.markup.bold {
+  color: #de935f;
+  font-weight: bold;
+}
+.markup.changed {
+  color: #b294bb;
+}
+.markup.deleted {
+  color: #cc6666;
+}
+.markup.italic {
+  color: #b294bb;
+  font-style: italic;
+}
+.markup.heading .punctuation.definition.heading {
+  color: #81a2be;
+}
+.markup.inserted {
+  color: #b5bd68;
+}
+.markup.list {
+  color: #cc6666;
+}
+.markup.quote {
+  color: #de935f;
+}
+.markup.raw.inline {
+  color: #b5bd68;
+}
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+}
+.source.gfm .markup.heading {
+  color: #b5bd68;
+}
+pre.editor-colors[mini] .scroll-view,
+.host([mini]) .scroll-view {
+  padding-left: 1px;
+}
+</style>
+  </head>
+  <body class='markdown-preview'><p><img src="/home/ryan/traffichat/python/worksheets/logonobg.png"></p>
+<h1 id="beginners-gpio-2">Beginners GPIO - 2</h1>
+<h2 id="detecting-button-input">Detecting button input</h2>
+<p>In this worksheet we will instead use the button to turn on the LED when we press the button and off when we release the button.</p>
+<p>Begin by loading up the code from the last worksheet and saving it as <code>2-ButtonInput.md</code></p>
+<p>To begin we want to first assign the variable button to the GPIO pin that the button uses.
+Underneath the line that says <code>green = 22</code> add <code>button = 25</code>.</p>
+<p>Next we want to setup the button to be an input.
+Underneath the line that says <code>IO.setup(green,IO.OUT)</code> you will need to add the following line.</p>
+<pre class="editor-colors lang-python"><div class="line"><span class="source python"><span class="meta function-call python"><span>IO</span><span>.</span><span>setup</span><span class="punctuation definition arguments begin python"><span>(</span></span><span class="meta function-call arguments python"><span>button</span><span>,</span><span>IO</span><span>.</span><span>IN</span><span>,</span><span class="variable parameter function python"><span>pull_up_down</span></span><span class="keyword operator assignment python"><span>=</span></span><span>IO</span><span>.</span><span>PUD_UP</span></span><span class="punctuation definition arguments end python"><span>)</span></span></span></span></div></pre>
+<p>That section of code should now look like this in total</p>
+<pre class="editor-colors lang-python"><div class="line"><span class="source python"><span>&nbsp;</span></span></div><div class="line"><span class="source python"><span class="comment line number-sign python"><span class="punctuation definition comment python"><span>#</span></span><span>Next&nbsp;we&nbsp;want&nbsp;to&nbsp;setup&nbsp;the&nbsp;Green&nbsp;LED&nbsp;as&nbsp;an&nbsp;output</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source python"><span>green</span><span>&nbsp;</span><span class="keyword operator assignment python"><span>=</span></span><span>&nbsp;</span><span class="constant numeric integer decimal python"><span>22</span></span></span></div><div class="line"><span class="source python"><span>button</span><span>&nbsp;</span><span class="keyword operator assignment python"><span>=</span></span><span>&nbsp;</span><span class="constant numeric integer decimal python"><span>25</span></span></span></div><div class="line"><span class="source python"><span>&nbsp;</span></span></div><div class="line"><span class="source python"><span class="meta function-call python"><span>IO</span><span>.</span><span>setup</span><span class="punctuation definition arguments begin python"><span>(</span></span><span class="meta function-call arguments python"><span>green</span><span>,</span><span>IO</span><span>.</span><span>OUT</span></span><span class="punctuation definition arguments end python"><span>)</span></span></span><span>&nbsp;</span><span class="comment line number-sign python"><span class="punctuation definition comment python"><span>#</span></span><span>&nbsp;This&nbsp;sets&nbsp;the&nbsp;green&nbsp;LED&nbsp;to&nbsp;be&nbsp;an&nbsp;output.</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source python"><span class="meta function-call python"><span>IO</span><span>.</span><span>setup</span><span class="punctuation definition arguments begin python"><span>(</span></span><span class="meta function-call arguments python"><span>button</span><span>,</span><span>IO</span><span>.</span><span>IN</span><span>,</span><span class="variable parameter function python"><span>pull_up_down</span></span><span class="keyword operator assignment python"><span>=</span></span><span>IO</span><span>.</span><span>PUD_UP</span></span><span class="punctuation definition arguments end python"><span>)</span></span></span></span></div></pre>
+<p><strong>This will then successfully setup the button to be an input</strong></p>
+<p>That last section of the setup for the input isn&#39;t always required for every add-on, the TrafficHAT requires it for it&#39;s button to work.</p>
+<p>By doing this the Pi pull&#39;s the GPIO line high (1) and then when we press the button it turns the GPIO line to low (0).</p>
+<p>Here&#39;s a picture of what happens when you press the button.</p>
+<p><img src="/home/ryan/traffichat/python/worksheets/scopebutton.png"></p>
+<p>To finish our button code we then need to add the line to wait for the button press.</p>
+<p>Underneath the line <code>IO.output(green,1)</code> we then want to wait for the button to be pressed.</p>
+<p>Underneath this line add the following code:</p>
+<pre class="editor-colors lang-python"><div class="line"><span class="source python"><span class="keyword control repeat python"><span>while</span></span><span>(</span><span class="meta function-call python"><span>IO</span><span>.</span><span>input</span><span class="punctuation definition arguments begin python"><span>(</span></span><span class="meta function-call arguments python"><span class="constant numeric integer decimal python"><span>25</span></span></span><span class="punctuation definition arguments end python"><span>)</span></span></span><span>)</span><span>:</span></span></div><div class="line"><span class="source python"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control statement python"><span>pass</span></span></span></div><div class="line"><span class="source python"><span class="meta function-call python"><span>IO</span><span>.</span><span>output</span><span class="punctuation definition arguments begin python"><span>(</span></span><span class="meta function-call arguments python"><span>green</span><span>,</span><span class="constant numeric integer decimal python"><span>0</span></span></span><span class="punctuation definition arguments end python"><span>)</span></span></span></span></div></pre>
+<p>Don&#39;t forget this has to be indented with the rest of the code.
+Your code section here should now look like this</p>
+<pre class="editor-colors lang-python"><div class="line"><span class="source python"><span class="keyword control repeat python"><span>while</span></span><span>&nbsp;</span><span class="constant language python"><span>True</span></span><span>:</span></span></div><div class="line"><span class="source python"><span class="punctuation whitespace comment leading python"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign python"><span class="punctuation definition comment python"><span>#</span></span><span>Code&nbsp;in&nbsp;the&nbsp;while&nbsp;loop&nbsp;will&nbsp;repeat&nbsp;forever.</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source python"><span class="punctuation whitespace comment leading python"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign python"><span class="punctuation definition comment python"><span>#</span></span><span>As&nbsp;you&nbsp;can&nbsp;see&nbsp;we&#39;re&nbsp;using&nbsp;2&nbsp;indents&nbsp;for&nbsp;this.</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source python"><span>&nbsp;</span></span></div><div class="line"><span class="source python"><span class="punctuation whitespace comment leading python"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign python"><span class="punctuation definition comment python"><span>#</span></span><span>To&nbsp;begin&nbsp;we&#39;re&nbsp;going&nbsp;to&nbsp;turn&nbsp;the&nbsp;LED&nbsp;On</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source python"><span class="punctuation whitespace comment leading python"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign python"><span class="punctuation definition comment python"><span>#</span></span><span>The&nbsp;RPi.GPIO&nbsp;Library&nbsp;accepts&nbsp;a&nbsp;binary&nbsp;input&nbsp;to&nbsp;decide&nbsp;if&nbsp;it&nbsp;is&nbsp;on&nbsp;or&nbsp;off.</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source python"><span class="punctuation whitespace comment leading python"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign python"><span class="punctuation definition comment python"><span>#</span></span><span>Binary&nbsp;is&nbsp;either&nbsp;1&nbsp;for&nbsp;On&nbsp;/&nbsp;True&nbsp;or&nbsp;0&nbsp;for&nbsp;Off&nbsp;/&nbsp;False</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source python"><span>&nbsp;</span></span></div><div class="line"><span class="source python"><span class="punctuation whitespace comment leading python"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign python"><span class="punctuation definition comment python"><span>#</span></span><span>To&nbsp;control&nbsp;an&nbsp;output&nbsp;we&nbsp;do&nbsp;the&nbsp;following</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source python"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta function-call python"><span>IO</span><span>.</span><span>output</span><span class="punctuation definition arguments begin python"><span>(</span></span><span class="meta function-call arguments python"><span>green</span><span>,</span><span class="constant numeric integer decimal python"><span>1</span></span></span><span class="punctuation definition arguments end python"><span>)</span></span></span></span></div><div class="line"><span class="source python"><span>&nbsp;</span></span></div><div class="line"><span class="source python"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control repeat python"><span>while</span></span><span>(</span><span class="meta function-call python"><span>IO</span><span>.</span><span>input</span><span class="punctuation definition arguments begin python"><span>(</span></span><span class="meta function-call arguments python"><span class="constant numeric integer decimal python"><span>25</span></span></span><span class="punctuation definition arguments end python"><span>)</span></span></span><span>)</span><span>:</span></span></div><div class="line"><span class="source python"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control statement python"><span>pass</span></span></span></div><div class="line"><span class="source python"><span>&nbsp;</span></span></div><div class="line"><span class="source python"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta function-call python"><span>IO</span><span>.</span><span>output</span><span class="punctuation definition arguments begin python"><span>(</span></span><span class="meta function-call arguments python"><span>green</span><span>,</span><span class="constant numeric integer decimal python"><span>0</span></span></span><span class="punctuation definition arguments end python"><span>)</span></span></span></span></div></pre>
+<p>What this will now do is while the button is not pressed (It will read as high / 1 as described above) it will wait forever and do nothing (by using the pass command);</p>
+<p>Once it is pressed it will then turn off the Green LED.</p>
+<p>Now try running your code and then press the button.</p>
+<p><strong>The light will not actually turn off, instead it should go dimm.</strong></p>
+<p>By using an oscilioscope we can see what happens.</p>
+<p><img src="/home/ryan/traffichat/python/worksheets/scope1.png"></p>
+<p><strong>The picture above is a snapshot of what happens when that program is running and I press the button. If we zoom in we can then see what is happening more clearly.</strong></p>
+<p><img src="/home/ryan/traffichat/python/worksheets/scope2.png"></p>
+<p><strong>Due to there not being a delay after it turning off its then instantly turning it back on with the only delay being the time it takes for the Pi to run the code. </strong></p>
+<p>To fix this we need to just add one line after turning the green light off.</p>
+<p>Try adding a delay of 0.1 seconds after turning off the green light by adding undeneath it:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>sleep(0.1)</span></span></span></div></pre><p>And now re-run your program. Your light should turn off.</p>
+<p>Now in the code the light is still being turned on each time but as there is a longer delay of it being off our eyes see it as being turned off.</p>
+<p>Here&#39;s that same code on the oscilioscope again. This time zoomed in at the same level of the first picture.</p>
+<p><img src="/home/ryan/traffichat/python/worksheets/scope3.png"></p>
+<p>As you can see they are just very little blips from where it is turning on.</p>
+<p>Congratulations you have successfully used the button!</p></body>
+</html>

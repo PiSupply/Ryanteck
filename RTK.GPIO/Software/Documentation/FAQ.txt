@@ -1,0 +1,60 @@
+FREQUENTLY ASKED QUESTIONS
+
+Q1. Why is my LED very dim when I flash it?
+
+A1. Have you used the correct resistor value with the LED?
+
+There are two versions of the Arduino Pro Micro, a 3.3 volt device
+and a 5 volt device. The resistor required with any LED will be 
+slightly different if the supply voltage is different. A 330 Ohm
+resistor is typical with most LEDs on a 3.3 Volt supply.
+
+Also, if you have bought a kit of bits including buttons, note that
+there will be higher value resistors (usually 10K Ohm) in the kit.
+If you use a 10K resistor with an LED, it will just about glow,
+but very dim.
+
+
+Q2. Why is my 7-Segment display showing very strange patterns?
+
+A2. Have you set the polarity in anyio.seg7 correctly?
+Have you got a display that is wired differently to others?
+Have you connected the power rails?
+
+The anyio.seg7 module supports both Common Anode and Common Cathode
+displays. A Common Anode requires a low voltage to turn on the segments,
+whereas a Common Cathode display requires a high voltage to turn on
+the segments. The third parameter in the setup() function sets the
+polarity of the display
+
+import anyio.seg7 as display
+ON = True # True for Common Cathode, False for Common Anode
+display.setup (GPIO, LED_PINS, ON)
+
+Not all 7 segment displays are wired identically. A way to check
+is to individually power each LED segment through a resistor
+and use this to check which pin connects to which segment, 
+and adjust your LED_PINS constant appropriately.
+
+You should also check that you have wired the 0V and the VCC
+from the Arduino Pro Micro correctly to your breadboard (usually by
+running wires from those pins to the power rails on the breadboard)
+to ensure that the display is correctly powered.
+
+
+Q3. Why doesn't my button seem to work?
+
+A3. Have you wired the power rails correctly?
+
+For the button to work correctly and reliably, you will need a 0V
+connection for when the button is pressed, and a 3V3 connection
+to connect your pullup resistor to. Have you wired the 0V and VCC
+of the Arduino Pro Micro to the power rails of your breadboard
+correctly? Also, some larger breadboards have their power rails split
+into two disconnected halves, and you have to also jumper a wire
+between those two halves if you want to use the full length of the
+breadboard
+
+
+
+

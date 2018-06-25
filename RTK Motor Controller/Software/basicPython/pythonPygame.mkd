@@ -1,0 +1,61 @@
+#Python PyGame Controller
+In this second part of the tutorial we will be converting our code to add in a basic PyGame controller.
+
+First start by copying your basis code to a new file by running the command ```cp robotPython.py robotPygame.py``` and then open up the nano editor for that file using ```nano robotPygame.py```.
+
+##Setup
+The first thing we will need to do is import Pygame and setup a screen.
+
+Start by importing pygame at the top of your code along with the other imports just below import RPi.GPIO. The code to import ```import pygame```.
+
+Next after the import we need to add two more lines to be able to finish setting up pygame, these are the following lines:
+```
+pygame.init()#Initialise Pygame
+screen = pygame.display.set_mode((480,480))#Setup a window of 480x480px
+```
+
+##Adding the controller
+Next go to the bottom of the code just after the stop function finishes. If you have a while loop there remove all of the existing code out of the loop.
+
+Next we want to add the following lines of code to capture the keyboard in pygame and update the window:
+```
+while True: #Already in your code
+        pygame.display.flip() #Update the screen
+        keystate = pygame.key.get_pressed() #Get all keys pressed
+```
+
+We now need to add event handlers for each key, these can be done using the following code:
+```
+        if keystate[pygame.K_RIGHT]: #If the right key is pressed
+            print "right"#Turn Right
+            right()
+    
+        elif keystate[pygame.K_LEFT]: #Else if the left key is pressed
+            print "left" #Turn Left
+            left()
+        
+        elif keystate[pygame.K_DOWN]: #Else if the down key is pressed
+            print "back" #Go Backwards
+            backwards()
+        
+        elif keystate[pygame.K_UP]: #Else if the Up Key is pressed
+            print "up" #Go Forwards
+            forwards()
+            
+        else: #No keys are pressed
+            stop() #Stop all motors
+```
+Next we need to add in some code to delay the program and allow us to close it, this is done using the following code:
+```
+    for event in pygame.event.get(): #When there is a pygame event
+        if event.type == pygame.QUIT: #The cross was clicked on the pygame window
+           stop() #Stop all motors
+	       GPIO.cleanup() #Cleanup the GPIO
+           exit(0) # Exit the program
+
+    time.sleep(0.01) #Sleep for 0.01 seconds
+```
+
+Finally save your code by running ```ctrl -x```, ```y```, and then press the Enter Key.
+
+Next from the GUI terminal run sudo python robotPygame.py , a window should pop up click it and then start controlling your motors / robot using the arrow keys on your keyboard!
