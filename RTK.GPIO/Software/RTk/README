@@ -3,12 +3,23 @@ The latest version of this anyio package can always be obtained from:
 https://github.com/whaleygeek/anyio
 
 
-The ProMicro.inf in the anyio/firmware folder originally came from
+The file referred to in the notes below is not included in RTK.GPIO, but 
+the note is left for reference purposes.
+
+The ProMicro.inf in the anyio/arduino/firmware folder originally came from
 the sparkfun github repository, and is included here for convenience
-only. You can always get the latest version from here:
+only. The latest version was available from here:
 
 https://github.com/sparkfun/SF32u4_boards/blob/master/driver/ProMicro.inf
 
+However this is no longer available, see here:
+
+https://github.com/sparkfun/SF32u4_boards
+
+The referenced Arduino Boards repository also no longer includes the file. 
+See here:
+
+https://github.com/sparkfun/Arduino_Boards
 
 @whaleygeek
 David Whale
