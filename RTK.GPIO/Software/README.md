@@ -4,11 +4,11 @@
 
 The RTK GPIO board allows you to connect the world of physical computing to you desktop PC or laptop. The RTK GPIO board emulates the original Raspberry Pi 28-pin GPIO header allowing you to program for the Raspberry Pi on your computer. The board is fully compatible with Windows, Mac OS and Linux and supports a range of programming languages such as Python, Java and also use with Scratch.
 
-The board connects to your computer using a micro USB cable (not supplied), which also provides power to the board.
+The board connects to your computer using a micro USB cable, which also provides power to the board.
 
 ## Linux
 
-The following guide has been tested to work with Debian Linux, in particular on the Raspberry Pi computer itself. There are a number of dependancies that also need to be installed such as some Python3 modules. To install the RTk.GPIO library there are just 4 simple steps:
+The following guide has been tested to work with Debian Linux, in particular on the Raspberry Pi computer itself. There are a number of dependencies that also need to be installed such as some Python3 modules. To install the RTk.GPIO library there are just 4 simple steps:
 
 1. Permission Change
 
@@ -84,7 +84,7 @@ A pop up box may appear asking you if you want to  allow the app to make changes
 
 2. Connect your board
 
-Now you can connect the RTk.GPIO board to your computer using a micro USB cable. When you plug it in to your USB port you shoudl see the Red LED light up to indicate it is powered up. When you connect it to a windows computer it should automatically detect and install the drivers automatically for you.
+Now you can connect the RTk.GPIO board to your computer using a micro USB cable. When you plug it in to your USB port you should see the Red LED light up to indicate it is powered up. When you connect it to a windows computer it should automatically detect and install the drivers automatically for you.
 
 3. Install RTk.GPIO Library
 
