@@ -50,18 +50,20 @@ The PROG header allows you to directly program the STM32F030 MCU using ST Link, 
 4. GND
 
 # UART
-This UART header is another way in which you can connect the RTK.GPIO board to your computer using serial to USB communication. The UARt header is connected to the CH340G serial to USB IC, which converts the signal and send it to the MCU.
+This UART header is another way in which you can connect the RTK.GPIO board to your computer using serial to USB communication. The UART header is connected to the CH340G serial to USB IC, which converts the signal and send it to the MCU.
 
-1.
-2.
-3.
-4.
+1. 5V
+2. RX
+3. TX
+4. GND
+
+This is broken out so you can send commands direct to the RTk.GPIO over UART by interfacing with these pins.
 
 # STM32F MCU
 
 The main active microcontroller is a STM32F 030C8T6 from ST microelectronics.
 
-* Core ARM 32-bit Cortex M0 CPU 48MHz
+* Core ARM 32-bit Cortex M0 CPU 48MHz (Running at )
 * 64 Kb Flash memory, 8 Kb SRAM
 * 2.4-3.6V Operating voltage
 
@@ -74,3 +76,5 @@ The micro USB and UART connectors are connected to the serial chip interface, wh
 * Supports RS232, RS422 and RS485
 * Uses the CH341 driver
 * Supports both 5V and 3.3V operation
+
+The CH340G on the RTk.GPIO uses UART Mode at 3v3. The RTk.GPIO uses a baudrate of 230400.
