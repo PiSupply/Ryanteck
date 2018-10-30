@@ -1,4 +1,4 @@
-#Programming the RTK-000-001 / RTK-000-003 using C
+# Programming the RTK-000-001 / RTK-000-003 using C
 
 In this tutorial we will be showing you how to program your RTK-000-001 Motor Controller to control two motors.
 These instructions also apply to the RTK-000-003 Budget Robotics Kit.
@@ -6,27 +6,35 @@ These instructions also apply to the RTK-000-003 Budget Robotics Kit.
 **Install some necessary software**
 First make sure your Pi is up to date with the latest versions of Raspbian:
 
-```sudo apt-get update```
-```sudo apt-get upgrade```
+```
+sudo apt update && sudo apt upgrade
+```
+
 
 If you do not have Git installed, then under Raspbian (or any of the Debian releases) you can install it with:
 
-```sudo apt-get install git-core```
+```
+sudo apt-get install git-core
+```
 
 **Download and Install wiringPi (the C library for controlling GPIOs)**
 
 First of all, obtain WiringPi using Git:
 
-```git clone git://git.drogon.net/wiringPi```
+```
+git clone git://git.drogon.net/wiringPi
+```
 
 Now build/install it using this script:
 
-```cd wiringPi```
-``` ./build ```
+```
+cd wiringPi
+./build
+```
 
 This last command will run a script to compile and install it all for you.
 
-##Creating the basis
+## Creating the basis
 First we will create the basis which will be used throughout. You will need to use the command line for this. Either use the command prompt you get after logging in, connect via SSH or open up LX Terminal if you are in X windows. At the command prompt, run ```nano robotC.c```
 
 First, we will set up and configure the GPIO pins on the Raspberry Pi.
@@ -128,19 +136,19 @@ We then run our program by typing
 
 The motors should move forwards for half a second, then stop for half a second. This repeats until you stop the program by pressing Ctrl-C. You should press Ctrl-C when the motors are stopped otherwise they will continue to run.
 
-####Troubleshooting direction
+#### Troubleshooting direction
 It is possible that the first time you run your code the motors will cause the wheels to run in the wrong direction. This can be easily fixed using either a small code change or swapping a wire over on the board.
 
-#####Code Fix
+##### Code Fix
 First identify which motor is going in the wrong direction and follow the cable to the board. If it is M1 then swap m1a to be 1 and m1b to be 0, if it is M2 then change m2a to be 4 and m2b to be 3. Re-compile and re-run the code and you should have them both going the right way.
 
-#####Wire Swap
+##### Wire Swap
 An easier solution (which means all tutorials will be using the same numbers) is just to unscrew the motor going the wrong way and plug the wires in the other way round. Both motors should go the same way now.
 
-###Backwards, Left & Right
+### Backwards, Left & Right
 To add in the other directions is very simple. Start by re-opening the program by running ```nano robotC.c``` and repeat the 'forwards' code 3 times, changing the forwards to backwards, left and right for each function.
 
-Next we need to modify them to move the motors in other directions. 
+Next we need to modify them to move the motors in other directions.
 
 Make your extra code look like the following:
 ```
