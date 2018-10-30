@@ -1,6 +1,6 @@
 #RTK-000-001 Bash / CLI Controller
 #Licensed under the GNU GPL V3 License
-#(C) Ryanteck LTD. 2014
+#(C) Pi Supply 2018
 #Contributors: Ryan Walmsley
 import time
 import curses
@@ -57,8 +57,8 @@ while True:
 
     elif key == 115:
         print ("Backward")
-        backwards()    
-	   
+        backwards()
+
     elif key == 97:
         print ("Left")
         left()
@@ -67,10 +67,9 @@ while True:
         print ("Right")
         right()
 
-      
+
     if key == 24:
         curses.endwin()
         exit(0)
     time.sleep(0.03)
     stop()
-

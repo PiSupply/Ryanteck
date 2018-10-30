@@ -1,6 +1,6 @@
 #RTK-000-001 Tester
 #Licensed under the GNU GPL V3 License
-#(C) Ryanteck LTD. 2014
+#(C) Pi Supply 2018
 #Contributors: Ryan Walmsley,
 
 #We want to be able to sleep but don't need all of time & space, just import sleep
@@ -24,7 +24,7 @@ GPIO.output(23,1)
 sleep(1)
 GPIO.output(17,0)
 GPIO.output(23,0)
-	
+
 #Now lets make it spin right for 1 second
 GPIO.output(18,1)
 GPIO.output(22,1)

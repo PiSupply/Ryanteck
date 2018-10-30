@@ -1,7 +1,7 @@
 #RTK-000-001 Pygame Controller
 #Licensed under the GNU GPL V3 License
-#(C) Ryanteck LTD. 2014
-#Contributors: Ryan Walmsley, Michael Horne 
+#(C) Pi Supply 2018
+#Contributors: Ryan Walmsley, Michael Horne
 from sys import exit
 import time
 import pygame
@@ -75,4 +75,3 @@ while True:
                         exit(0)
 
         time.sleep(0.01)
-
