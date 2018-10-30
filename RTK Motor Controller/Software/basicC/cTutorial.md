@@ -6,23 +6,31 @@ These instructions also apply to the RTK-000-003 Budget Robotics Kit.
 **Install some necessary software**
 First make sure your Pi is up to date with the latest versions of Raspbian:
 
-```sudo apt-get update```
-```sudo apt-get upgrade```
+```
+sudo apt update && sudo apt upgrade
+```
+
 
 If you do not have Git installed, then under Raspbian (or any of the Debian releases) you can install it with:
 
-```sudo apt-get install git-core```
+```
+sudo apt-get install git-core
+```
 
 **Download and Install wiringPi (the C library for controlling GPIOs)**
 
 First of all, obtain WiringPi using Git:
 
-```git clone git://git.drogon.net/wiringPi```
+```
+git clone git://git.drogon.net/wiringPi
+```
 
 Now build/install it using this script:
 
-```cd wiringPi```
-``` ./build ```
+```
+cd wiringPi
+./build
+```
 
 This last command will run a script to compile and install it all for you.
 
