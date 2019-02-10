@@ -78,3 +78,10 @@ The micro USB and UART connectors are connected to the serial chip interface, wh
 * Supports both 5V and 3.3V operation
 
 The CH340G on the RTk.GPIO uses UART Mode at 3v3. The RTk.GPIO uses a baudrate of 230400.
+
+# Drivers
+
+Links for divers:
+
+## Windows: https://github.com/C0deGyver/CH340-Drivers-for-Windows
+## Mac: https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver
