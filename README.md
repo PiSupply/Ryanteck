@@ -1,6 +1,6 @@
 # Ryanteck
 
-<img src="https://drive.google.com/uc?id=1wU0cazl8IItgqFSWLawmIbIemwol59yV">
+![banner](https://user-images.githubusercontent.com/1878314/73882280-aeca3c80-4859-11ea-9294-81c5e7cc61a2.png)
 
 [Pi-Supply](https://uk.pi-supply.com) is one of the official distributers and manufacturers of [Ryanteck](https://ryanteck.uk) products including; RTK.GPIO, RTK Motor Controller board and RTC Traffic HAT for the Raspberry Pi. These product were designed by Ryan Walmsley at Ryanteck Ltd and manufactured in the UK.
 
