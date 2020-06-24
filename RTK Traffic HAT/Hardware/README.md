@@ -1,7 +1,5 @@
 # RTK Traffic HAT
 
-<img width="798" alt="Screen Shot 2020-06-24 at 09 01 40" src="https://user-images.githubusercontent.com/1878314/85519503-83be6a80-b5f9-11ea-8bd5-e4bec9dfd9e9.png">
-
 ## Traffic HAT Pinout
 
 - Red LED - GPIO24 (pin 18)
@@ -9,3 +7,15 @@
 - Green LED - GPIO22 (pin 15)
 - Switch 1 - GPIO25 (pin 22)
 - Buzzer - GPIO05 (pin 29)
+
+## GPIO Pins Used
+
+## EEPROM
+The TrafficHAT also contains an EEPROM on board so it can identify to the Raspberry Pi as a HAT.
+However for full operation this is not required for it to operate normally.
+
+## Schematic
+The schematic can be found in both PDF format and as an Eagle CAD Schematic.
+
+## Hardware
+The hardware can be found as both Gerber format and EagleCAD BRD format. Along with BOM.
