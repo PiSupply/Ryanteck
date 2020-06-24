@@ -4,8 +4,8 @@
 
 ## Traffic HAT Pinout
 
-Red LED - GPIO24 (pin 18)
-Yellow LED - GPIO23 (pin 16)
-Green LED - GPIO22 (pin 15)
-Switch 1 - GPIO25 (pin 22)
-Buzzer - GPIO05 (pin 29)
+- Red LED - GPIO24 (pin 18)
+- Yellow LED - GPIO23 (pin 16)
+- Green LED - GPIO22 (pin 15)
+- Switch 1 - GPIO25 (pin 22)
+- Buzzer - GPIO05 (pin 29)
