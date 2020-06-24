@@ -1,6 +1,6 @@
 # RTK Traffic HAT
 
-![Traffic-HAT-Top_1024x](https://user-images.githubusercontent.com/1878314/85520201-7f468180-b5fa-11ea-9b54-a396ecf137e7.jpg)
+![Traffichat](Hardware/Traffichat.jpg)
 
 The traffic HAT is designed for beginners to teach the basics or programming the real world with a traffic light sequence of LEDs. The HAT has 3 on-board LEDs (Red, Yellow, Green) with a push button and piezo buzzer.
 
