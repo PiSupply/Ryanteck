@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-06-24T12:22:39Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "traffic-rtk"
+        },
+        "Owner": "Aaron Shaw <sales@pi-supply.com>",
+        "Size": {
+            "X": 65.018844,
+            "Y": 56.5
+        }
+    }
+}
