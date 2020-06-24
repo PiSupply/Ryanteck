@@ -1,8 +1,8 @@
 
 <img src = "logonobg.png"/>
 
-#Beginners GPIO - 2
-##Detecting button input
+# Beginners GPIO - 2
+## Detecting button input
 In this worksheet we will instead use the button to turn on the LED when we press the button and off when we release the button.
 
 Begin by loading up the code from the last worksheet and saving it as ```2-ButtonInput.md```

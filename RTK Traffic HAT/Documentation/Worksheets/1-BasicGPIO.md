@@ -30,7 +30,7 @@ Your comments should now appear in the colour red.
 
 **Each line here has been commented with what the line does. You don't need to copy these as they are for you to understand what each line does.**
 
-###Don't forget - Python is case sensitive!
+### Don't forget - Python is case sensitive!
 
 
 ```python
