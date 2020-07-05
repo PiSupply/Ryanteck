@@ -12,7 +12,7 @@ motor1b = 18
 motor2a = 22
 motor2b = 23
 
-GPIO.setup((motor1a,GPIO.OUT)
+GPIO.setup(motor1a,GPIO.OUT)
 GPIO.setup(motor1b,GPIO.OUT)
 GPIO.setup(motor2a,GPIO.OUT)
 GPIO.setup(motor2b,GPIO.OUT)
