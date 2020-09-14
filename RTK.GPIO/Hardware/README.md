@@ -61,7 +61,7 @@ This is broken out so you can send commands direct to the RTk.GPIO over UART by 
 
 # STM32F MCU
 
-The main active microcontroller is a STM32F 030C8T6 from ST microelectronics.
+The main active microcontroller is a STM32F030C8T6 from ST microelectronics.
 
 * Core ARM 32-bit Cortex M0 CPU 48MHz (Running at )
 * 64 Kb Flash memory, 8 Kb SRAM
