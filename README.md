@@ -22,7 +22,7 @@ The new and improved RTK-000-001-V3 / Motor Controller Board for Raspberry Pi is
 
 The Ryanteck Raspberry Pi Motor Controller Board is a simple to use & budget friendly motor controller board for the Raspberry Pi which allows you to easily control 2 motors in both directions with some simple coding!
 
-Once you receive the board, simply place it on the Raspberry Pi's GPIO header, screw in a power pack, add your motors and then start programming. We officially support Python & Scratch at this point in time although you can use it with any language that allows you to control the GPIO pins including C, Java, PHP, Bash, Node.JS etc.
+Once you receive the board, simply place it on the Raspberry Pi's GPIO header, screw in a power pack, add your motors and then start programming. We officially support Python at this point in time although you can use it with any language that allows you to control the GPIO pins including Scratch, C, Java, PHP, Bash, Node.JS etc.
 
 ## RTK Traffic HAT
 ![Traffichat](RTK%20Traffic%20HAT/img/Traffichat.jpg)
