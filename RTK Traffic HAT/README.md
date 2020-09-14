@@ -11,4 +11,4 @@ The TrafficHAT Comes fully pre-assembled and ready to go!
 We are proud to say that the Traffic HAT is certified by the [Open Source Hardware Association](https://certification.oshwa.org/uk000012.html) with UID number UK000012. Our certification mark is below:
 
 
-![OSHW_mark_UK000012](https://user-images.githubusercontent.com/1878314/93085359-5aa7f600-f68d-11ea-8dca-05bb40a60d34.png)
+![OSHW_mark_UK000012](https://user-images.githubusercontent.com/1878314/93085818-136e3500-f68e-11ea-940a-43e381c02fb6.png)
