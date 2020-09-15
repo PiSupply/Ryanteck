@@ -1,0 +1,7 @@
+Partlist exported from C:/Users/Ryan/Documents/eagle/RTKMCBB/rtk-000-001-v3-rev1.sch at 24/07/2018 10:07
+
+Qty Value      Device            Package           Parts                  Description                  MPN        OC_FARNELL OC_NEWARK PACKAGE SUPPLIER         
+2              PINHD-1X10        1X10              JP2, JP3               PIN HEADER                                                                            
+1              RPIGPIOPINHD-2X13 2X13              JP1                    RASPBERRY PI GPIO PIN HEADER                                                          
+3   1X2-3.5MM  1X2-3.5MM         3.5MMTERM         MOTOR-1, MOTOR-2, VCC2 3.5mm Terminal block                                                                  
+1   SN754410NE SN754410NE        DIP254P762X508-16 U1                     QUADRUPLE HALF-H DRIVERS     SN754410NE 1470411    08F8145   PDIP-16 Texas Instruments
