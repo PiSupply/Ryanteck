@@ -1,6 +1,6 @@
 # RTK GPIO
 
-![Ryanteck_RTk GPIO_PC_GPIO_Interface_1024x-4](https://user-images.githubusercontent.com/1878314/85520512-ee23da80-b5fa-11ea-826f-f2b07410e839.png)
+![RTk.GPIO](../img/rtkgpio.png)
 
 The above image of the RTK.GPIO PCB is used in the following descriptions to highlight some of the inputs and outputs and other useful hardware information of the board.
 
