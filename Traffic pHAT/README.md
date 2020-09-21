@@ -1,6 +1,6 @@
 # Traffic pHAT
 
-![Traffic-pHAT-6](https://user-images.githubusercontent.com/1878314/93787297-379aba80-fc28-11ea-9fb7-befc8171ab7e.jpg)
+![Traffic-pHAT-6](img/Traffic-pHAT-6.jpg)
 
 The traffic HAT is designed for beginners to teach the basics or programming the real world with a traffic light sequence of LEDs. The HAT has 3 on-board LEDs (Red, Yellow, Green) with a push button and piezo buzzer.
 
