@@ -10,7 +10,7 @@ These two screw terminals are used to connect two motors to the motor controller
 
 ## VCC2
 
-VCC2 screw terminal provides power to the motors and the motor controller chip. You can connect a power supply from 4.5V to 36V ma with current up to 1A. The left terminal it the +V (Red wire) and the right terminal is GND (Black wire).
+VCC2 screw terminal provides power to the motors and the motor controller chip. You can connect a power supply from 4.5V to 12V  with current up to 1A. The left terminal it the +V (Red wire) and the right terminal is GND (Black wire).
 
 ## GPIO Breakout Headers
 
@@ -47,7 +47,7 @@ The main active component is the SN75441ONE H-Bridge motor controller by TI.
 | 9          | 3,4 EN | VCC          |
 | 10         | 3A     | GPIO 22      |
 | 11         | 3Y     | Motor B 2    |
-| 12         | GND    | GND from VIN |
+| 12         | GND    | GND          |
 | 13         | GND_2  | GND          |
 | 14         | 4Y     | Motor B 1    |
 | 15         | 4A     | GPIO 23      |
