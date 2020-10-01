@@ -1,5 +1,7 @@
 # Programming the RTK-000-001 / RTK-000-003 using C
 
+## This tutorial may no longer work as wiringPi is now discontinued. No support can now be given for this.
+
 In this tutorial we will be showing you how to program your RTK-000-001 Motor Controller to control two motors.
 These instructions also apply to the RTK-000-003 Budget Robotics Kit.
 
