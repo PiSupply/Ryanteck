@@ -28,7 +28,6 @@ There are two rows of 10 GPIO headers, which are breakout from the main 26-way R
 | 8   | GPIO 11| 8 | GPIO 7  |
 | 9   | GND | 9    | GND     |
 | 10  | GND | 10   | GND     |
-|-----|-----|------|---------|
 
 ## SN75441ONE
 
@@ -52,4 +51,3 @@ The main active component is the SN75441ONE H-Bridge motor controller by TI.
 | 14         | 4Y     | Motor B 1    |
 | 15         | 4A     | GPIO 23      |
 | 16         | VCC 1  | VCC          |
-|------------|--------|--------------|
