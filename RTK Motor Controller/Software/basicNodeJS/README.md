@@ -1,4 +1,6 @@
-# Programming the RTK-000-001 / RTK-000-003 using Node.js #
+# Programming the RTK-000-001 / RTK-000-003 using Node.js
+
+## This tutorial may no longer work as it has not been tested for over a year.
 
 In this tutorial we will be showing you how to program your RTK-000-001 Motor Contoller to move around two motors for robots including the RTK-000-003 Budget Robotics Kit
 
@@ -25,4 +27,3 @@ sudo node nodeBasis.js
 ```
 
 Cylon.js documentation mentions stuff about configuring I2C drivers and others, but for this example fiddling with any kernel modules or additional controller software is not required.
-

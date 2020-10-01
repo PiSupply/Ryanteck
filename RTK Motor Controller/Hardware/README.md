@@ -1,6 +1,6 @@
 # RTK Motor Controller Board
 
-<img src="https://drive.google.com/uc?id=1F4HU0QRtmpFsVreogqSMVeMkVLBE3yXS" width="600" height="600">
+![rtkmcb](../img/rtkmcb.jpg)
 
 The above image of the RTK Motor Controller Board PCB is used in the following descriptions to highlight some of the inputs and outputs and other useful hardware information of the board.
 
@@ -10,7 +10,7 @@ These two screw terminals are used to connect two motors to the motor controller
 
 ## VCC2
 
-VCC2 screw terminal provides power to the motors and the motor controller chip. You can connect a power supply from 4.5V to 36V ma with current up to 1A. The left terminal it the +V (Red wire) and the right terminal is GND (Black wire).
+VCC2 screw terminal provides power to the motors and the motor controller chip. You can connect a power supply from 4.5V to 12V  with current up to 1A. The left terminal it the +V (Red wire) and the right terminal is GND (Black wire).
 
 ## GPIO Breakout Headers
 
@@ -28,7 +28,6 @@ There are two rows of 10 GPIO headers, which are breakout from the main 26-way R
 | 8   | GPIO 11| 8 | GPIO 7  |
 | 9   | GND | 9    | GND     |
 | 10  | GND | 10   | GND     |
-|-----|-----|------|---------|
 
 ## SN75441ONE
 
@@ -47,9 +46,8 @@ The main active component is the SN75441ONE H-Bridge motor controller by TI.
 | 9          | 3,4 EN | VCC          |
 | 10         | 3A     | GPIO 22      |
 | 11         | 3Y     | Motor B 2    |
-| 12         | GND    | GND from VIN |
+| 12         | GND    | GND          |
 | 13         | GND_2  | GND          |
 | 14         | 4Y     | Motor B 1    |
 | 15         | 4A     | GPIO 23      |
 | 16         | VCC 1  | VCC          |
-|------------|--------|--------------|
