@@ -29,9 +29,9 @@ Once you receive the board, simply place it on the Raspberry Pi's GPIO header, s
 
 
 
-The traffic HAT is designed for beginners to teach the basics or programming the real world with a traffic light sequence of LEDs. The HAT has 3 on-board LEDs (Red, Yellow, Green) with a push button and piezo buzzer.
+The Traffic HAT is designed for beginners to teach the basics or programming the real world with a traffic light sequence of LEDs. The HAT has 3 on-board LEDs (Red, Yellow, Green) with a push button and piezo buzzer.
 
-The traffic HAT comes as a half soldered, half kit package. The 40 way header, HAT EEPROM circuit and resistors for the button are pre soldered on the bottom side. You will be required to solder the 3 LEDs, Button and Buzzer.
+The new Pi Supply branded Traffic HAT comes fully soldered and ready to go!
 
 ## Traffic pHAT
 
