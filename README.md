@@ -24,14 +24,22 @@ The Ryanteck Raspberry Pi Motor Controller Board is a simple to use & budget fri
 
 Once you receive the board, simply place it on the Raspberry Pi's GPIO header, screw in a power pack, add your motors and then start programming. We officially support Python at this point in time although you can use it with any language that allows you to control the GPIO pins including Scratch, C, Java, PHP, Bash, Node.JS etc.
 
-## RTK Traffic HAT
+## Traffic HAT
 ![Traffichat](RTK%20Traffic%20HAT/img/Traffichat.jpg)
 
 
 
 The traffic HAT is designed for beginners to teach the basics or programming the real world with a traffic light sequence of LEDs. The HAT has 3 on-board LEDs (Red, Yellow, Green) with a push button and piezo buzzer.
 
-The TrafficHAT Comes as a half soldered, half kit package. The 40 way header, HAT EEPROM Circuit and resistors for the button are pre soldered on the bottom side. You will be required to solder the 3 LEDs, Button and Buzzer.
+The traffic HAT comes as a half soldered, half kit package. The 40 way header, HAT EEPROM circuit and resistors for the button are pre soldered on the bottom side. You will be required to solder the 3 LEDs, Button and Buzzer.
+
+## Traffic pHAT
+
+![Traffic-pHAT-6](Traffic%20pHAT/img/Traffic-pHAT.jpg)
+
+The Traffic pHAT is designed as a simple board to easily show the status of all the things! It is very much like the larger traffic HAT but with only 3 on-board LEDS (Red, Yellow, Green) and in a pHAT format. It comes with a 40 way GPIO header, so it perfect for any Raspberry Pi board with a 40 way connector.
+
+The Traffic pHAT Comes fully assembled and ready to go!
 
 ## Where to buy
 
