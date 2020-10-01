@@ -1,18 +1,15 @@
-# RTK Traffic HAT
+# RTK Traffic pHAT
 
-## Traffic HAT Pinout
+## Traffic pHAT Pinout
 
-- Red LED - GPIO24 (pin 18)
-- Yellow LED - GPIO23 (pin 16)
-- Green LED - GPIO22 (pin 15)
-- Switch 1 - GPIO25 (pin 22)
-- Buzzer - GPIO05 (pin 29)
+- Red LED - GPIO25 (pin 22)
+- Yellow LED - GPIO24 (pin 18)
+- Green LED - GPIO23 (pin 16)
 
 ## GPIO Pins Used
 
 ## EEPROM
-The TrafficHAT also contains an EEPROM on board so it can identify to the Raspberry Pi as a HAT.
-However for full operation this is not required for it to operate normally.
+The Traffic pHAT contains NO EEPROM, this was so it doesn't cause any conflicts with other HATs or pHATs.
 
 ## Schematic
 The schematic can be found in both PDF format and as an Eagle CAD Schematic.
