@@ -1,6 +1,6 @@
 # RTK Motor Controller
 
-![Motor-Controller-Board-Bottom_1024x](https://user-images.githubusercontent.com/1878314/85520683-2a573b00-b5fb-11ea-9f20-cbd59273d849.jpg)
+![rtkmcb](img/rtkmcb.jpg)
 
 The new and improved RTK-000-001-V3 / Motor Controller Board for Raspberry Pi is now pre-soldered and features a new and improved design breaking out the GPIO Pins to the side of the board.
 
