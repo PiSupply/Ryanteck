@@ -1,24 +1,14 @@
-# testLED.py - 06/06/2014 D.J.Whale
-# Modified by Ryan Walmsley
-# Test flashing an LED
-
-from time import sleep
-t = 0.01
-
-
-# RTk.GPIO
+#!/bin/env python
 import RTk.GPIO as GPIO
 
-P = 22
+PWMPIN = 11
+FREQUENCY = 50
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(P, GPIO.OUT)
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(PWMPIN, GPIO.OUT)
+pwm = GPIO.PWM(PWMPIN, FREQUENCY)
 
+for i in range(181):
+	pwm.start(servoCalc(i))
 
-while True:
-	GPIO.output(P, True)
-	sleep(t)
-	GPIO.output(P, False)
-	sleep(t)
-
-# END
+GPIO.cleanup()

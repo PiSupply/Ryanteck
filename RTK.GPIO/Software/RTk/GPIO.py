@@ -30,7 +30,7 @@ RPI_INFO = {'P1_REVISION': 3, 'RAM': 'Unknown', 'REVISION': '90092', 'TYPE': 'Un
 
 from RTk import protocol
 from RTk import adaptors
-
+from RTk.PWM import PWM_Mod as PWM
 
 #from os import sys, path
 #thisdir = path.dirname(path.abspath(__file__))
